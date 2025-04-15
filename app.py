@@ -16,5 +16,14 @@ def concept():
 def merch():
     return render_template('merch.html')
 
+@app.route('/whoware', methods=['GET'])
+def whoweare():
+    return render_template('whoweare.html')
+
+@app.route('/guidelines', methods=['GET'])
+def guidelines():
+    return render_template('guidelines.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=int(os.environ.get("PORT", 5001)))
