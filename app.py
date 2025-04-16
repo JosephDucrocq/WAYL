@@ -16,7 +16,7 @@ def concept():
 def merch():
     return render_template('merch.html')
 
-@app.route('/whoware', methods=['GET'])
+@app.route('/whoweare', methods=['GET'])
 def whoweare():
     return render_template('whoweare.html')
 

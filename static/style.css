@@ -163,3 +163,61 @@ a:not(.sidebar a):hover {
   opacity: 0.5; /* Adjust opacity for subtler effect */
   pointer-events: none; /* Prevent interaction with the video */
 }
+
+.merch-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.merch-item {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+  flex: 1 1 250px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.merch-item:hover {
+  transform: translateY(-5px);
+}
+
+.merch-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.merch-item p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.order-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff0055;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+}
+
+.order-button:hover {
+  background-color: #e6004e;
+  transform: translateY(-2px);
+}
