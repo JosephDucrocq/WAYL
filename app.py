@@ -24,6 +24,10 @@ def whoweare():
 def guidelines():
     return render_template('guidelines.html')
 
+@app.route('/orders', methods=['GET'])
+def orders():
+    return render_template('orders.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=int(os.environ.get("PORT", 5001)))

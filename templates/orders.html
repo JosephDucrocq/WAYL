@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order - WAYL</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Order Your WAYL Item</h1>
+
+    <form action="/submit-order" method="POST">
+      <label for="product">Product</label>
+      <select id="product" name="product" required>
+        <option value="mug">WAYL Mug</option>
+        <option value="cap">WAYL Cap</option>
+        <option value="tote">WAYL Tote Bag</option>
+      </select>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <fieldset>
+        <legend>Shipping Address</legend>
+      
+        <label for="house">Flat / House Number</label>
+        <input type="text" id="house" name="house" required />
+      
+        <label for="street">Street Name</label>
+        <input type="text" id="street" name="street" required />
+      
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required />
+      
+        <label for="postcode">Postcode</label>
+        <input type="text" id="postcode" name="postcode" required />
+      
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" required />
+      </fieldset>
+
+      <label for="card">Card Number</label>
+      <input type="text" id="card" name="card" placeholder="XXXX-XXXX-XXXX-XXXX" required />
+
+      <label for="expiry">Expiry</label>
+      <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required />
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" placeholder="123" required />
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -221,3 +221,73 @@ a:not(.sidebar a):hover {
   background-color: #e6004e;
   transform: translateY(-2px);
 }
+
+.form-container {
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #ff0055;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #000;
+}
+
+form button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff0055;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #e6004e;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
