@@ -1,0 +1,7 @@
+services:
+  - type: static
+    name: my-static-site
+    repo: https://github.com/JosephDucrocq/WAYL
+    branch: main
+    buildCommand: ""         # Leave blank for plain HTML/CSS/JS
+    staticPublishPath: "/"   # Root folder
