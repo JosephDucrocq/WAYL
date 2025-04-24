@@ -15,6 +15,12 @@ body {
   min-height: 100vh;
 }
 
+.justified-text {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  text-align: justify;
+}
 /* Sidebar Hover Trigger Zone */
 .sidebar-hover-zone {
   position: fixed;
@@ -123,12 +129,27 @@ img {
 a:not(.sidebar a) {
   display: inline-block;
   margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.60rem 0.5rem;
   background-color: #ff0055;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+a[data-type="special"] {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.02rem 0.4rem !important;
+  background-color: #ff0055;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: none !important;
   font-size: 0.9rem;
   border: none;
   border-radius: 2px;
@@ -205,7 +226,7 @@ a:not(.sidebar a):hover {
 .order-button {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
+  padding: 0.02rem 0.4rem !important;
   background-color: #ff0055;
   color: #fff;
   text-decoration: none;
